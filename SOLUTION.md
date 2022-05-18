@@ -13,12 +13,30 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app w
 
 > To run the app on a specific port run `ng serve --port={PORT_NUMBER}`
 
+## Env.js file
+
+Enter custom counterapi Key and Namespace
+
+- The app runs with default values when in development mode ('ng serve')
+- After the app is built ('ng build') the defaults will be overwritten by the values in the 'env.js'
+
+* `window.__env.counterKey = "KEY_VALUE";`
+* `window.__env.counterNamespace = "NAMESPACE_VALUE";`
+
 ## Theme
 
 Custom themes and SCSS variables can be found in the theme directory
 
 - default Angular Material color palettes can be customized in `theme/theme.scss`
 - quick access SCSS variables can be edited in the `theme/variables.scss` file
+
+## In-App Routing
+
+Routing is in place if different page views were added in the future
+
+- any future pages and components could be added to `app-routing.module.ts`
+- a redirect route for the root is sent to `/dashboard`
+- routes outside of the defined routes are sent to a `PageNotFoundComponent`
 
 ## Build
 
