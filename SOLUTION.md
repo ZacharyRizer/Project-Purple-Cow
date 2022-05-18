@@ -60,7 +60,7 @@ Run `npm run build` or `ng build` to build the project. The build artifacts will
 
 ## Build and Run with Docker
 
-- `docker build -t {IMAGE_NAME} .` where 'IMAGE_NAME' is whatever you'd like the image to be called
+- From project root `docker build -t {IMAGE_NAME} .` where 'IMAGE_NAME' is whatever you'd like the image to be called
 - `docker run -d -p 3000:80 --name {CONTAINER_NAME} {IMAGE_NAME}` where 'CONTAINER_NAME' is what you'd like to name the container
 - Navigate to `http://localhost:3000/`
 
