@@ -40,11 +40,16 @@ Routing is in place if different page views were added in the future
 - a redirect route for the root is sent to `/dashboard`
 - routes outside of the defined routes are sent to a `PageNotFoundComponent`
 
+## Count Group Add/Remove
+
+- Two buttons on right side of navbar add or remove count groups
+- Currently the count group ID's are stored in local storage
+
 ## Future Additions
 
 1. A simple database that would store the count groups rather than using local storage
 2. A login page so that individual users would have their own count groups - user data stored in database
-3. A simple JWT or auth based system to check user credentials
+3. A JWT or auth based system to check user credentials
 4. A navigation menu (placed behind logo in navbar) to see individual detail pages of each count group
 5. Dynamic form field to enter new name spaces so that the count groups are not limited to a single Namespace
 6. Store custom namespace with user in the database
@@ -55,9 +60,9 @@ Run `npm run build` or `ng build` to build the project. The build artifacts will
 
 ## Build and Run with Docker
 
-> `docker build -t {IMAGE_NAME} .` where 'IMAGE_NAME' is whatever you'd like the image to be called
-> `docker run -d -p 3000:80 --name {CONTAINER_NAME} {IMAGE_NAME}` where 'CONTAINER_NAME' is what you'd like to name the container
-> Navigate to `http://localhost:3000/`
+- `docker build -t {IMAGE_NAME} .` where 'IMAGE_NAME' is whatever you'd like the image to be called
+- `docker run -d -p 3000:80 --name {CONTAINER_NAME} {IMAGE_NAME}` where 'CONTAINER_NAME' is what you'd like to name the container
+- Navigate to `http://localhost:3000/`
 
 ## Branch Information
 
