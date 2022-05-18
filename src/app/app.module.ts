@@ -11,6 +11,7 @@ import { MaterialModule } from './material.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DashboardViewComponent } from './dashboard-view/dashboard-view.component';
+import { ClickGroupComponent } from './click-group/click-group.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DashboardViewComponent } from './dashboard-view/dashboard-view.componen
     NavbarComponent,
     PageNotFoundComponent,
     DashboardViewComponent,
+    ClickGroupComponent,
   ],
   imports: [
     AppRoutingModule,

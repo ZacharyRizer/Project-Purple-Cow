@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="container">
-    <div class="count">Current Count: {{ currentCount }}</div>
-    <button mat-flat-button color="primary" (click)="clickEvent()">
-      Add One to Count
-    </button>
+    <app-click-group
+      *ngFor="let count of clickService.countGroups"
+      [countGroup]="count"
+    ></app-click-group>
   </div>
 </div>
