@@ -1,0 +1,28 @@
+.logo-wrapper {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .image {
+    height: 1em;
+    margin-left: 1em;
+  }
+}
+.message {
+  margin: 2em;
+  text-align: center;
+}
+.wrapper {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  z-index: 1000;
+}

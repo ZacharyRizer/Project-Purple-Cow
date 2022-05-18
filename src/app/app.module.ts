@@ -6,9 +6,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardViewComponent } from './dashboard-view/dashboard-view.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent, PageNotFoundComponent, DashboardViewComponent],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,

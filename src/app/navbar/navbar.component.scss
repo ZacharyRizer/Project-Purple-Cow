@@ -1,0 +1,39 @@
+@import "src/theme/variables.scss";
+
+.header {
+  color: white;
+  margin: 0 1em;
+}
+
+.home-link {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+
+  .image {
+    height: 1.15em;
+    margin-left: 1em;
+  }
+}
+
+.nav-container {
+  align-items: center;
+  background-color: $primary;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.15em;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 1em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-left {
+  align-items: center;
+  display: flex;
+  margin-left: 0.5rem;
+}
