@@ -1,8 +1,17 @@
+@import "src/theme/variables.scss";
+
+button {
+  margin-bottom: 0.5em;
+}
+
 .container {
+  border: 2px solid $primary-dark;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0.5em;
 }
 
 .count {

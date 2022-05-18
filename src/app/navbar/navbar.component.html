@@ -5,4 +5,17 @@
       <span class="header">Project Purple Cow</span>
     </div>
   </div>
+  <div>
+    <button mat-flat-button color="primary" (click)="addCountGroup()">
+      Add a new counter
+    </button>
+    <button
+      [disabled]="clickService.countGroups.length <= 1"
+      mat-flat-button
+      color="primary"
+      (click)="clickService.countGroups.length > 1 && removeCountGroup()"
+    >
+      Remove a counter
+    </button>
+  </div>
 </div>
