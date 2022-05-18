@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+// import theme and any custom scss variables
+@import "src/theme/theme.scss";
+@import "src/theme/variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.error {
+  background-color: $error;
+  color: white;
+  font-weight: 500;
+}
+
+.info {
+  background-color: $primary-light;
+  color: white;
+  font-weight: 500;
+}
+
+.success {
+  background-color: $light-green;
+  color: white;
+  font-weight: 500;
+}
+
+.warn {
+  background-color: $warn;
+  color: white;
+  font-weight: 500;
+}
