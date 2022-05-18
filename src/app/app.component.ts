@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <app-navbar></app-navbar>
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  `,
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'Project-Purple-Cow';

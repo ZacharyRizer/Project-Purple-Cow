@@ -13,6 +13,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app w
 
 > To run the app on a specific port run `ng serve --port={PORT_NUMBER}`
 
+## Theme
+
+Custom themes and SCSS variables can be found in the theme directory
+
+- default Angular Material color palettes can be customized in `theme/theme.scss`
+- quick access SCSS variables can be edited in the `theme/variables.scss` file
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
