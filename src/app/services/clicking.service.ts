@@ -4,17 +4,18 @@ import { EnvService } from './env.service';
 
 @Injectable({ providedIn: 'root' })
 export class ClickingService {
+  countGroups: number[] = [0];
   constructor(private env: EnvService, private http: HttpClient) {}
 
-  click() {
+  click(groupNum: number) {
     return this.http.get(
-      `https://api.countapi.xyz/hit/${this.env.counterNamespace}/${this.env.counterKey}`
+      `https://api.countapi.xyz/hit/${this.env.counterNamespace}-${groupNum}/${this.env.counterKey}`
     );
   }
 
-  getClickCount() {
+  getClickCount(groupNum: number) {
     return this.http.get(
-      `https://api.countapi.xyz/get/${this.env.counterNamespace}/${this.env.counterKey}`
+      `https://api.countapi.xyz/get/${this.env.counterNamespace}-${groupNum}/${this.env.counterKey}`
     );
   }
 }

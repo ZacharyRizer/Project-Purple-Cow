@@ -20,7 +20,7 @@ export class DashboardViewComponent implements OnInit {
   }
 
   clickEvent() {
-    this.clickService.click().subscribe({
+    this.clickService.click(0).subscribe({
       next: (res: any) => {
         this.currentCount = res?.value;
         this.notifier.open(`Click updated!`, '', {
@@ -36,7 +36,7 @@ export class DashboardViewComponent implements OnInit {
   }
 
   currentClickCount() {
-    this.clickService.getClickCount().subscribe({
+    this.clickService.getClickCount(0).subscribe({
       next: (res: any) => {
         this.currentCount = res?.value;
       },
