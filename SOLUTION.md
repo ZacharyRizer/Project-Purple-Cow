@@ -2,17 +2,25 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
+## Installation
+
+1. Git Clone this repo
+2. run `npm install`
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> To run the app on a specific port run `ng serve --port={PORT_NUMBER}`
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Branch Information
+
+- all production stages of the application are on branch 'main'
+- interim development stages are on branch 'dev' and merged with 'main'
 
 ## Running unit tests
 
