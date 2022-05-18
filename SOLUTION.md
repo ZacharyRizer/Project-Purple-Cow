@@ -5,12 +5,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 
 1. Git Clone this repo
-2. 'cd' into the root directory of the project
-3. run `npm install`
+2. If Angular CLI is not installed run `npm install -g @angular/cli`
+3. 'cd' into the root directory of the project
+4. run `npm install`
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `npm run start` or `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 > To run the app on a specific port run `ng serve --port={PORT_NUMBER}`
 
@@ -18,7 +19,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The app w
 
 Enter custom counterapi Key and Namespace
 
-- The app runs with default values when in development mode ('ng serve')
+- The app runs with default values when in development mode (`npm run start` or `ng serve`)
 - After the app is built ('ng build') the defaults will be overwritten by the values in the 'env.js'
 
 * `window.__env.counterKey = "KEY_VALUE";`
@@ -50,7 +51,13 @@ Routing is in place if different page views were added in the future
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` or `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Build and Run with Docker
+
+> `docker build -t {IMAGE_NAME} .` where 'IMAGE_NAME' is whatever you'd like the image to be called
+> `docker run -d -p 3000:80 --name {CONTAINER_NAME} {IMAGE_NAME}` where 'CONTAINER_NAME' is what you'd like to name the container
+> Navigate to `http://localhost:3000/`
 
 ## Branch Information
 
