@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 
 1. Git Clone this repo
-2. run `npm install`
+2. 'cd' into the root directory of the project
+3. run `npm install`
 
 ## Development server
 
@@ -37,6 +38,15 @@ Routing is in place if different page views were added in the future
 - any future pages and components could be added to `app-routing.module.ts`
 - a redirect route for the root is sent to `/dashboard`
 - routes outside of the defined routes are sent to a `PageNotFoundComponent`
+
+## Future Additions
+
+1. A simple database that would store the count groups rather than using local storage
+2. A login page so that individual users would have their own count groups - user data stored in database
+3. A simple JWT or auth based system to check user credentials
+4. A navigation menu (placed behind logo in navbar) to see individual detail pages of each count group
+5. Dynamic form field to enter new name spaces so that the count groups are not limited to a single Namespace
+6. Store custom namespace with user in the database
 
 ## Build
 
